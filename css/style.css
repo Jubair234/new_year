@@ -1,12 +1,26 @@
+*{
+  outline: 1px;
+}
 body {
   font-family: "Merriweather", serif;
-  max-width: 95%;
+  
   margin: auto;
   padding-top: 30px;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 .bg-img {
   position: relative;
   min-height: 80vh;
+  max-width: 95%;
+  margin: auto;
 }
 
 .bg-img::before {
@@ -66,6 +80,8 @@ body {
 .midnight-img {
   position: relative;
   min-height: 80vh;
+  max-width: 95%;
+  margin: auto;
 }
 .midnight-img::before {
   content: "";
@@ -123,6 +139,8 @@ body {
     rgba(0, 212, 255, 1) 0%,
     rgba(121, 9, 120, 0.06486344537815125) 0%
   );
+  max-width: 95%;
+  margin: auto;
   margin-top: 120px;
   padding: 60px 0;
   line-height: 0.5;
@@ -143,7 +161,8 @@ body {
   cursor: pointer;
 }
 .coming {
-  width: 100%;
+  max-width: 95%;
+  margin: auto;
   display: flex;
   margin-top: 120px;
   align-items: center;
@@ -204,6 +223,8 @@ body {
   position: relative;
   min-height: 80vh;
   margin-top: 80px;
+  max-width: 95%;
+  margin: auto;
 }
 .fifty::before {
   content: "";
@@ -225,7 +246,8 @@ body {
   transform: translate(0, -60%);
 }
 .awesome {
-  width: 50%;
+  max-width: 95%;
+  margin: auto;
   line-height: 0.5;
 }
 .awesome h5 {
@@ -240,12 +262,15 @@ body {
 .awesome p {
   color: #b1aeae;
   line-height: 1.5;
+  width: 50%;
 }
 .showcase {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-top: 60px;
+  max-width: 95%;
+  margin: auto;
 }
 
 .showcase img {
@@ -270,6 +295,7 @@ body {
   align-items: center;
   max-width: 300px;
   margin: auto;
+  
 }
 
 .form-input {
@@ -306,3 +332,4 @@ footer {
 .footer-img img {
   margin-right: 15px;
 }
+
